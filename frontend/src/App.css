@@ -28,7 +28,10 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 2rem;
+}
+
+.metrics h2 {
+  margin: 0;
 }
 
 .metric-section {

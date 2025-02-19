@@ -110,10 +110,11 @@ function App() {
       <div className="input-section">
         <h2>Enter On-Platform Metrics</h2>
         <h3>
-          These metrics change, and some can be influenced through messaging,
-          creative, landing page, audences/exclusions, campaign strategy, etc.
-          Play around with these numbers to see where you should shift your
-          attention to improve your results.
+          Enter your key metrics below to see how they impact your results.
+          Start with your current data for a given time frame, then adjust the
+          inputs to explore different scenarios. This will help you understand
+          how changes in one metric affect overall performance, identify areas
+          for improvement, and refine your campaign strategy to hit your goals.
         </h3>
         <div className="form-inputs">
           <label htmlFor="spend">
@@ -178,30 +179,20 @@ function App() {
           </label>
         </div>
       </div>
-      <div className="results">
+      <div className="metrics">
         <h2>Your Results</h2>
-        <div className="metrics">
-          {/* <h4>Core Metrics</h4>
-          <div className="metric-section">
-            <p>Spend {!spend ? 0 : spend}</p>
-            <p>CPM {!cpm ? 0 : cpm}</p>
-            <p>CTR {!ctr ? 0 : ctr}</p>
-            <p>CVR {!cvr ? 0 : cvr}</p>
-            <p>AOV {!aov ? 0 : aov}</p>
-          </div> */}
-          <h4>Engagement Metrics</h4>
-          <div className="metric-section">
-            <p>Impressions {!impressions ? 0 : impressions.toLocaleString()}</p>
-            <p>Clicks {!clicks ? 0 : clicks.toLocaleString()}</p>
-            <p>CPC ${!cpc ? 0 : cpc} </p>
-          </div>
-          <h4>Conversion Metrics</h4>
-          <div id="conversion-metrics" className="metric-section">
-            <p>Purchases {!purchases ? 0 : purchases.toLocaleString()}</p>
-            <p>Conversion Revenue ${!revenue ? 0 : revenue.toLocaleString()}</p>
-            <p>ROAS {!roas ? 0 : roas}</p>
-            <p>CPA ${!cpa ? 0 : cpa}</p>
-          </div>
+        <h4>Engagement Metrics</h4>
+        <div className="metric-section">
+          <p>Impressions {!impressions ? 0 : impressions.toLocaleString()}</p>
+          <p>Clicks {!clicks ? 0 : clicks.toLocaleString()}</p>
+          <p>CPC ${!cpc ? 0 : cpc} </p>
+        </div>
+        <h4>Conversion Metrics</h4>
+        <div id="conversion-metrics" className="metric-section">
+          <p>Purchases {!purchases ? 0 : purchases.toLocaleString()}</p>
+          <p>Conversion Revenue ${!revenue ? 0 : revenue.toLocaleString()}</p>
+          <p>ROAS {!roas ? 0 : roas}</p>
+          <p>CPA ${!cpa ? 0 : cpa}</p>
         </div>
       </div>
     </>
