@@ -4,6 +4,8 @@ This calculator is a web application designed to help digital media buyers visua
 
 It allows users to enter their on-platform metrics that you can influence, and outputs the engagement and performance metrics that result. This was built as a personal project to bridge the gap between my experience in digital advertising and as a developer, and answers the questions media buyers ask daily: why am I getting these performance results and what should I do about it?
 
+![My Image](assets/CalculatorPreview.gif)
+
 ## Features
 
 - Enter Spend, CPM, CTR, AOV, and CVR metrics
