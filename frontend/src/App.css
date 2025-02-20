@@ -1,15 +1,20 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+h3 {
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .form-inputs {
   margin: 1rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 2rem;
 }
 
@@ -22,6 +27,7 @@ input {
   margin: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ccc;
+  max-width: 100%;
 }
 
 .metrics {
@@ -36,20 +42,43 @@ input {
 
 .metric-section {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* justify-content: space-around; */
+  flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .metric-section p {
-  margin: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 1rem;
 }
 
 #conversion-metrics p {
   background-color: lightgreen;
+}
+
+@media only screen and (min-width: 768px) {
+  h3 {
+    line-height: 1.5;
+  }
+
+  .form-inputs {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .metric-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .metric-section p {
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    height: 0.5rem;
+  }
 }
