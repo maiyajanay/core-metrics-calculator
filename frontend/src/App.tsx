@@ -195,6 +195,9 @@ function App() {
           <p>CPA ${!cpa ? 0 : cpa}</p>
         </div>
       </div>
+      <div className="contact">
+        <p>Created by Maiya Hoard - Contact Me at maiyajanay@gmail.com</p>
+      </div>
     </>
   );
 }

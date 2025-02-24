@@ -60,6 +60,9 @@ input {
   background-color: lightgreen;
 }
 
+.contact {
+  margin-top: 2rem;
+}
 @media only screen and (min-width: 768px) {
   h3 {
     line-height: 1.5;
